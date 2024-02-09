@@ -203,10 +203,10 @@ function gameEnd(e) {
     d.setAttribute("data", e)
     if (e) {
         gId("rT").innerText = "You Win!"
-        gId("rM").innerHTML = "Congratulations, you found the word!<br/><br/>Good Job!"
+        gId("rM").innerHTML = "Congratulations, you found the word!<br/><br/>Good Job cutie!"
     } else {
         gId("rT").innerText = "You Lose!"
-        gId("rM").innerHTML = "The word was <br/><br/>\"" + word[select][0].toUpperCase() + "\"<br/><br/>Better luck next time."
+        gId("rM").innerHTML = "The word was <br/><br/>\"" + word[select][0].toUpperCase() + "\"<br/><br/> edhi kuda thelvakunda vuntey etlaney.Better luck next time."
     }
     d.className = ""
 }
