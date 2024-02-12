@@ -8,7 +8,7 @@
 
 // Word selection
 // New word = ["Word name", "Hint"]
-var word = [["rolls", "The food you like the most."], ["pani puri", "food you eat everyday."], ["pulihora", "the food you bring to yeah clg almost everytime."], ["February", "the month we met"], ["eggpuff", "the nickname i given to you ."], ["goku", "name of the gift u gave me recently."], ["biryani", "the food which i like most"], ["Christian", "type of marriage u wanna do."], ["chocolate", "second most thing u like"], ["manchidhi", "A word u almost use it everytime"], ["eyes", "Thing which i like in you."], ["jujutsukaisen", "the anime which i like most, well its  starts with j."]]
+var word = [["rolls", "The food you like the most ."], ["pani puri", "food you eat alomst everyday."], ["icecream", "food you like better than me ."], ["pulihora", "the food you bring to yeah clg almost everytime."], ["February", "the month we met"], ["eggpuff", "the nickname i given to you ."], ["goku", "name of the gift u gave me recently."], ["biryani", "the food which i like most"], ["Christian", "type of marriage u wanna do."], ["chocolate", "second most thing u like"], ["manchidhi", "A word u almost use it everytime"], ["eyes", "Thing which i like in you."], ["jujutsukaisen", "the anime which i like most, well its  starts with j."]]
 
 // Game keyboard
 var tastatur = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
