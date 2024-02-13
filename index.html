@@ -1,47 +1,101 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
 
-<!DOCTYPE html>
-<html t="0x31" i="YA-9517" v="1.60">
-    <head>
-        <title>Hangman (Game)</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" type = "text/css"  href = "index.css" >
-    </head>
-    <body>
-        <div id="home">
-            <div class="title">Hangman</div>
-            <div class="button anim" onclick="startGame()">Play</div>
-            <div class="foother">Coded by sravankumar</div>
-        </div>
-        <div id="result" class="h">
-            <div class="title" id="rT"></div>
-            <div class="body" id="rM"></div>
-            <div class="button anim" onclick="startGame()">Try Again?</div>
-        </div>
-        <div id="pGame">
-            <div id="letter"></div>
-            <div id="game">
-                <div class="player">
-                    <div class="playerModel">
-                        <div class="head" data="false" id="g4"></div>
-                        <div class="body" data="false" l="false" r="false" id="g5"></div>
-                        <div class="foot" data="false" l="false" r="false" id="g6"></div>
-                    </div>
-                </div>
-                <div class="stang3" data="false" id="g3"></div>
-                <div class="stang2" data="false" id="g2"></div>
-                <div class="stang" data="false" id="g1"></div>
-                <div class="ground" data="false" id="g0"></div>
-                <div class="hintButton" data="false" id="hintButton" onclick="hint()">?</div>
-            </div>
-            <div id="tastatur">
-                <div id="moveKeybord"><div class="marg"></div></div>
-                <div id="keybord"></div>
-            </div>
-            <div class="hint" id="hint">
-                <div class="title">Hint<div class="exit" onclick="hintExit()">X</div></div>
-                <div class="body" id="hintText"></div>
-            </div>
-        </div>
-    </body>
-    <script src = "index.js" ></script>
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* good morning harshitha,</span><br />
+				<span class="space"/><span class="comments">* so I write some code to celebrate our valentines day.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"sravankumar"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"harshitha"</span>);<br />
+				<span class="comments">// feb 14, 2019, is the day we met and is the day i compleately fallen inlove with you. </span><br />
+				i.love(u);<br />
+				<span class="comments">// Luckily, you accepted my proposal and become my gf tbh i was really scared but damn u said yessssss.</span><br />
+				u.accepted();<br />
+				<span class="comments">// Since then, I miss u every day.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// your smile and ur cuteness and ur angry face whats keeping me alive for now lol .</span><br />
+				i.cuteness(u);<br />
+				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
+				<span class="comments">// So I keep waiting and I have confidence that you will and we will be together for sure , i really pray to god to keep u in my life forever.</span><br />
+				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isHesitate) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
+				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
+				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				}<br />
+				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
+				i.marry(u);<br />
+				i.liveHappilyWith(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						harshitha, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- sravankumar</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2010, 10, 2);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
 </html>
